@@ -1,4 +1,4 @@
-# Python SSH Lab Credential Tester & Metasploitable 2
+# Python SSH Brute-Forcer 🛡️
 
 Educational security-lab project documenting an SSH credential-validation exercise and service enumeration against an intentionally vulnerable Metasploitable 2 VM.
 
