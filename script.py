@@ -7,13 +7,16 @@ import sys
 
 def test_ssh(host, port, username, password, timeout=5):
     command = [
-        "sshpass", "-p", password, "ssh",
+        "sshpass",
+        "-p", password,
+        "ssh",
         "-p", str(port),
         "-o", "StrictHostKeyChecking=no",
         "-o", "UserKnownHostsFile=/dev/null",
         "-o", "HostKeyAlgorithms=+ssh-rsa",
         "-o", "ConnectTimeout=5",
-        f"{username}@{host}", "exit"
+        f"{username}@{host}",
+        "exit"
     ]
 
     try:
@@ -27,7 +30,9 @@ def test_ssh(host, port, username, password, timeout=5):
         if result.returncode == 0:
             return True
 
-        print(result.stderr.decode(errors="ignore").strip())
+        print(
+            result.stderr.decode(errors="ignore").strip()
+        )
         return False
 
     except subprocess.TimeoutExpired:
@@ -44,6 +49,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="SSH credential tester for an authorized lab"
     )
+
     parser.add_argument("-t", "--target", required=True)
     parser.add_argument("-p", "--port", type=int, default=22)
     parser.add_argument("-u", "--user", required=True)
