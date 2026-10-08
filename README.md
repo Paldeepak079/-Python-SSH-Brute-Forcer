@@ -23,12 +23,9 @@ See the enumeration notes and screenshots directory.
 
 ## Safety
 This repository should not contain real-world credentials, private keys, sensitive wordlists, or data taken from systems outside the lab.
+
+
 # Metasploitable 2 SSH Lab — Step-by-Step
-<img width="1061" height="582" alt="image" src="https://github.com/user-attachments/assets/d30d17b1-aa0c-4ade-979c-c908a4ee82fa" />
-<img width="1193" height="584" alt="image" src="https://github.com/user-attachments/assets/7a9cd0c3-5c76-4a8e-a45a-e1e0617e4d80" />
-<img width="1236" height="655" alt="image" src="https://github.com/user-attachments/assets/8782de96-9d28-4da1-8cac-2d41262f8531" />
-
-
 
 ## 1. VMware setup
 Run Kali Linux and Metasploitable 2 on an isolated lab network. Do not expose Metasploitable 2 to an untrusted network.
